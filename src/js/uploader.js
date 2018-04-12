@@ -279,7 +279,7 @@
                         var renameFile = function() {
                             if(filename !== undefined && filename !== null && filename !== '') {
                                 var ext = file.ext;
-                                if(ext.length && !options.renameExtension && filename.lastIndexOf('.' + ext) !== (filename.length - ext.length - 1)) {
+                                if(ext.length && !options.renameExtension && filename.lastIndexOf('.' + ext) == -1) {
                                     filename += '.' + ext;
                                 }
                                 file.name = filename;
