@@ -284,8 +284,7 @@
                                 	if(index_ == -1){
                                 		filename += '.' + ext;
                                 	}else{
-                                		var ext_new = filename.substring(index_, filename.length);
-                                		if(ext_new != ext) filename = filename.substring(0, index_) + "." + ext;
+                                		filename = filename.substring(0, index_) + "." + ext;
                                 	} 
                                 }
                                 file.name = filename;
